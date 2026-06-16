@@ -11,17 +11,22 @@ public class Solution {
 	  int[]arr = {1,2,3,4,5,6,7,8,9,10};
 	  
 	  Stack<Character>stk = new Stack<>();
+	  Stack<Integer>indexStk = new Stack<>();
 	  
-	  for(char ch : s.toCharArray()){
+	 for(int i = 0; i<s.length(); i++){
 		  
+		 char ch = s.charAt(i);
+		 
 		  if(ch == '*'){
 			  if(!stk.isEmpty()){
 			  stk.pop();
+			  indexStk.pop();
 		  }
 		  }
 		  else{
 		  
 		 stk.push(ch);
+		 indexStk.push(i);
 	  }
 		  }
 	  
@@ -39,6 +44,14 @@ public class Solution {
 	 
 	  String rev = str.reverse().toString();
 	  System.out.println("Reverse String : " + rev);
+	  
+	  System.out.println("Original Indexes : ");
+	  
+	  for(int index : indexStk){
+		  
+		  System.out.println(index + " ");
+	  }
+	  System.out.println();
 	  
 	  int sum = 0;
 	  int max = arr[0];
