@@ -7,7 +7,7 @@ public class Solution {
 
 	public static void main(String[] args) {
 		
-	  String s = "ab**cd*ef*g";
+	  String s = "ab**ccd*ef*ggc";
 	  int[]arr = {1,2,3,4,5,6,7,8,9,10};
 	  
 	  Stack<Character>stk = new Stack<>();
