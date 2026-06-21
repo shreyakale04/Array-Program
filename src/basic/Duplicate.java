@@ -1,24 +1,9 @@
 package basic;
 
-//import java.util.HashSet;
-//import java.util.Set;
-
 public class Duplicate {
 
 	
-		
-//		Set<Integer>set = new HashSet<>();
-		
-//	     for(int num : arr){
-//	    	 
-//	    	 if(set.add(num)){
-//	    		 
-//	    		
-//	    	 }
-//	     }
-//	     System.out.println(set);
-	
-	public static int removeDuplicates(int[] arr) {
+public static int removeDuplicates(int[] arr) {
 
         if (arr.length == 0)
             return 0;
@@ -41,7 +26,7 @@ public class Duplicate {
 
     public static void main(String[] args) {
 
-        int[] arr = {0,0,1,1,1,2,2,3,3,4};
+        int[] arr = {1,1,1,2,2,3,3,4};
 
         int length = removeDuplicates(arr);
 
