@@ -3,7 +3,7 @@ package basic;
 public class RotateArray {
 
 	public static void main(String[] args) {
-		
+		//Traverse
 		int[] arr = {1, 2, 3, 4, 5};
 		
 		int k = 3;
