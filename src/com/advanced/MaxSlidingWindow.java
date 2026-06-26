@@ -31,6 +31,7 @@ public class MaxSlidingWindow {
         for (int i = 0; i < n; i++) {
 
 
+        	
             // Remove elements outside current window
             while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
                 deque.removeFirst();
